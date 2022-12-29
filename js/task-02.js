@@ -1,0 +1,12 @@
+const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments"];
+const newArray = [];
+const list = document.querySelector("#ingredients");
+
+const liMaker = ingredients.forEach(function (number, i) {
+    // console.log(ingredients[i]);
+    const list_li = document.createElement("li");
+    list_li.classList.add("item");
+    list_li.textContent = ingredients[i];
+    newArray.push(list_li);
+    list.append(list_li);
+});
