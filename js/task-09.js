@@ -2,16 +2,15 @@ const btnRef = document.querySelector(".change-color");
 const outputRef = document.querySelector(".color");
 const bodyRef = document.querySelector("body");
 //================variant 1 =================
-btnRef.addEventListener("click", (event) => {
-    const zm = getRandomHexColor();
-    outputRef.textContent = zm;
-    bodyRef.style.backgroundColor = zm;
-});
+// btnRef.addEventListener("click", (event) => {
+//     const zm = getRandomHexColor();
+//     outputRef.textContent = zm;
+//     bodyRef.style.backgroundColor = zm;
+// });
 
 // =====================variant 2============
 btnRef.addEventListener("click", (event) => {
-    const zm = getRandomHexColor();
-    bodyRef.style.backgroundColor = outputRef.textContent = zm;
+    bodyRef.style.backgroundColor = outputRef.textContent = getRandomHexColor();
 });
 
 function getRandomHexColor() {

@@ -2,7 +2,7 @@ const buttonPlus = document.querySelector('[data-action="decrement"]');
 const myClickPlus = () => {
     const itemRef = document.querySelector("#value");
     let clicks = Number(itemRef.textContent);
-    clicks += 1;
+    clicks -= 1;
     itemRef.textContent = clicks;
     console.log(clicks);
 };
@@ -11,7 +11,7 @@ const buttonMinus = document.querySelector('[data-action="increment"]');
 const myClickMinus = () => {
     const itemRef = document.querySelector("#value");
     let clicks = Number(itemRef.textContent);
-    clicks -= 1;
+    clicks += 1;
     itemRef.textContent = clicks;
     console.log(clicks);
 };
